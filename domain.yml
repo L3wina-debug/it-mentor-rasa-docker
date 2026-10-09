@@ -1,0 +1,56 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - bot_challenge
+  - ask_definition
+  - ask_language
+  - ask_network
+  - ask_security
+  - ask_database
+  - ask_cloud
+  - ask_docker
+  - ask_programming
+  - ask_career
+  - out_of_scope
+
+entities:
+  - technology
+
+responses:
+  utter_greet:
+    - text: "Bonjour ! Je suis IT Mentor, votre assistant informatique. Posez-moi une question sur le développement, les réseaux, la sécurité, le cloud ou Docker."
+  utter_goodbye:
+    - text: "À bientôt ! Bon courage pour vos projets informatiques."
+  utter_thank_you:
+    - text: "Avec plaisir ! Je suis là si vous avez une autre question IT."
+  utter_bot_challenge:
+    - text: "Je suis IT Mentor, un chatbot éducatif construit avec Rasa et déployé dans des conteneurs Docker."
+  utter_ask_definition:
+    - text: "Une API est une interface qui permet à deux applications de communiquer via des règles et des requêtes définies."
+  utter_ask_language:
+    - text: "Pour débuter, Python est souvent un excellent choix : syntaxe lisible, vaste écosystème et usages en web, IA et automatisation. Le meilleur langage dépend de votre objectif."
+  utter_ask_network:
+    - text: "Un réseau relie des équipements pour échanger des données. TCP/IP définit les règles de communication ; un routeur relie des réseaux différents et un switch relie surtout les appareils d'un même réseau local."
+  utter_ask_security:
+    - text: "Les bases de la cybersécurité : mots de passe uniques avec gestionnaire, MFA, mises à jour régulières, sauvegardes, et vigilance face aux liens ou pièces jointes suspects."
+  utter_ask_database:
+    - text: "Une base de données stocke des informations de façon structurée. SQL sert notamment à créer, lire, modifier et supprimer des données dans des bases relationnelles comme PostgreSQL ou MySQL."
+  utter_ask_cloud:
+    - text: "Le cloud fournit des ressources informatiques à la demande. IaaS offre des machines virtuelles, PaaS une plateforme de déploiement et SaaS une application prête à utiliser."
+  utter_ask_docker:
+    - text: "Docker emballe une application et ses dépendances dans une image. Un conteneur est l'instance exécutée de cette image : il est portable, isolé et rapide à démarrer."
+  utter_ask_programming:
+    - text: "Pour résoudre un problème, clarifiez d'abord l'objectif, découpez-le en petites étapes, écrivez une version simple, testez-la puis améliorez-la. Utilisez Git pour suivre vos modifications."
+  utter_ask_career:
+    - text: "Construisez des projets concrets, publiez-les sur GitHub, maîtrisez les fondamentaux (algorithmes, Git, réseau, bases de données) et choisissez progressivement une spécialité qui vous intéresse."
+  utter_out_of_scope:
+    - text: "Je suis spécialisé en informatique. Reformulez votre question en lien avec le développement, les réseaux, les bases de données, la sécurité, le cloud ou Docker."
+
+actions: []
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

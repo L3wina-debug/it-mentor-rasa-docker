@@ -1,0 +1,18 @@
+services:
+  rasa:
+    build: .
+    container_name: assistant-it-rasa
+    ports:
+      - "5005:5005"
+    restart: unless-stopped
+  web:
+    image: nginx:1.27-alpine
+    container_name: assistant-it-web
+    depends_on:
+      - rasa
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
