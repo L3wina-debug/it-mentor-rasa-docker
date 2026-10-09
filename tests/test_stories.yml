@@ -1,0 +1,14 @@
+version: "3.1"
+stories:
+  - story: test docker
+    steps:
+      - user: |
+          qu'est-ce que Docker ?
+        intent: ask_docker
+      - action: utter_ask_docker
+  - story: test securite
+    steps:
+      - user: |
+          comment sécuriser mon ordinateur
+        intent: ask_security
+      - action: utter_ask_security

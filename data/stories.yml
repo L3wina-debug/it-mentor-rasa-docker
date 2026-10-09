@@ -1,0 +1,58 @@
+version: "3.1"
+stories:
+  - story: salutation
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - story: au revoir
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - story: remerciement
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+  - story: identite bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge
+  - story: definition api
+    steps:
+      - intent: ask_definition
+      - action: utter_ask_definition
+  - story: langage
+    steps:
+      - intent: ask_language
+      - action: utter_ask_language
+  - story: reseau
+    steps:
+      - intent: ask_network
+      - action: utter_ask_network
+  - story: securite
+    steps:
+      - intent: ask_security
+      - action: utter_ask_security
+  - story: base de donnees
+    steps:
+      - intent: ask_database
+      - action: utter_ask_database
+  - story: cloud
+    steps:
+      - intent: ask_cloud
+      - action: utter_ask_cloud
+  - story: docker
+    steps:
+      - intent: ask_docker
+      - action: utter_ask_docker
+  - story: programmation
+    steps:
+      - intent: ask_programming
+      - action: utter_ask_programming
+  - story: carriere
+    steps:
+      - intent: ask_career
+      - action: utter_ask_career
+  - story: hors sujet
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope

@@ -1,0 +1,86 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - bonjour
+      - salut
+      - bonsoir assistant
+      - coucou
+  - intent: goodbye
+    examples: |
+      - au revoir
+      - à bientôt
+      - bye
+      - bonne journée
+  - intent: thank_you
+    examples: |
+      - merci
+      - merci beaucoup
+      - c'est gentil
+      - super merci pour ton aide
+  - intent: bot_challenge
+    examples: |
+      - es-tu un robot ?
+      - qui es-tu
+      - tu es humain ?
+      - quel est ton nom
+  - intent: ask_definition
+    examples: |
+      - qu'est-ce qu'une API ?
+      - définis API
+      - c'est quoi une API REST
+      - explique-moi le terme API
+  - intent: ask_language
+    examples: |
+      - quel langage apprendre pour commencer ?
+      - dois-je apprendre Python ou Java ?
+      - quel est le meilleur langage de programmation
+      - parle-moi de [Python](technology)
+  - intent: ask_network
+    examples: |
+      - qu'est-ce qu'un réseau informatique ?
+      - quelle différence entre routeur et switch
+      - explique TCP IP
+      - comment fonctionne un réseau local
+  - intent: ask_security
+    examples: |
+      - comment protéger mon compte ?
+      - donne-moi des conseils de cybersécurité
+      - c'est quoi le phishing
+      - comment sécuriser mon ordinateur
+  - intent: ask_database
+    examples: |
+      - qu'est-ce qu'une base de données ?
+      - à quoi sert SQL
+      - explique [PostgreSQL](technology)
+      - quelle différence entre MySQL et MongoDB
+  - intent: ask_cloud
+    examples: |
+      - qu'est-ce que le cloud computing ?
+      - explique IaaS PaaS SaaS
+      - parle-moi de [AWS](technology)
+      - comment fonctionne le cloud
+  - intent: ask_docker
+    examples: |
+      - qu'est-ce que Docker ?
+      - quelle différence entre image et conteneur
+      - comment lancer un conteneur Docker
+      - explique docker compose
+  - intent: ask_programming
+    examples: |
+      - comment débuter un programme
+      - donne-moi une méthode pour coder
+      - quels outils utiliser pour programmer
+      - comment tester mon code
+  - intent: ask_career
+    examples: |
+      - comment devenir développeur ?
+      - quels métiers existent en informatique
+      - que mettre dans mon portfolio IT
+      - comment trouver un stage en informatique
+  - intent: out_of_scope
+    examples: |
+      - quel temps fera-t-il demain
+      - raconte une blague
+      - quelle est la capitale du Japon
+      - donne-moi une recette de pizza

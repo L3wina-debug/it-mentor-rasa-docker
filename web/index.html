@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Mentor | Assistant Informatique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">◈</span><span>IT Mentor</span></div>
+      <div class="new-chat">＋ Nouvelle discussion</div>
+      <div class="side-label">DOMAINES</div>
+      <nav>
+        <button class="topic">⌘ Développement</button><button class="topic">◌ Réseaux</button>
+        <button class="topic">◈ Cybersécurité</button><button class="topic">☁ Cloud & Docker</button>
+      </nav>
+      <p class="sidebar-note">Propulsé par Rasa<br>Déployé avec Docker</p>
+    </aside>
+    <section class="chat-area">
+      <header><div><p class="eyebrow">ASSISTANT INTELLIGENT</p><h1>Votre copilote <em>IT</em></h1></div><div class="status"><i></i> En ligne</div></header>
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message bot"><div class="avatar">IT</div><div><div class="bubble">Bonjour ! Je suis <strong>IT Mentor</strong>. Je peux vous aider en développement, réseau, sécurité, bases de données, cloud et Docker.<br><br>Par quoi souhaitez-vous commencer ?</div><time>maintenant</time></div></article>
+      </div>
+      <div class="suggestions"><button>Qu'est-ce que Docker ?</button><button>Explique TCP/IP</button><button>Conseils cybersécurité</button><button>Quel langage apprendre ?</button></div>
+      <form id="chat-form" class="composer"><input id="user-input" type="text" autocomplete="off" placeholder="Posez votre question informatique..." aria-label="Votre message" /><button type="submit" aria-label="Envoyer">↑</button></form>
+      <p class="footer-note">IT Mentor peut faire des erreurs. Vérifiez toujours les informations importantes.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
